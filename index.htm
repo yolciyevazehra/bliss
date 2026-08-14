@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Bistro Bliss</title>
+</head>
+
+<body>
+    <header>
+        <!-- topbar -->
+        <div class="px-4 py-2.5 bg-[#474747]">
+            <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+                <div class="text-slate-900 text-[13px] flex flex-wrap items-center gap-x-4 gap-y-1">
+                    <span class="text-[#F9F9F7]">
+                        <i class="fa-solid fa-phone text-[#F9F9F7]"></i>
+                        (414) 857 - 0107
+                    </span>
+                    <span class="text-[#F9F9F7]">
+                        <i class="fa-regular fa-envelope text-[#F9F9F7]"></i>
+                        yummy@bistrobliss
+                    </span>
+
+
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="#"
+                        class=" text-[#F9F9F7] block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
+                        aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="size-4 fill-[#F9F9F7] hover:fill-blue-700 transition" aria-hidden="true"
+                            viewBox="0 0 155.139 155.139">
+                            <path
+                                d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761z"
+                                data-original="#010002" />
+                        </svg>
+                    </a>
+
+                    <a href="#"
+                        class="block text-[#F9F9F7] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
+                        aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="size-4 fill-[#F9F9F7] hover:fill-blue-700 transition" aria-hidden="true"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0"
+                                data-original="#ffffff" />
+                        </svg>
+                    </a>
+
+                    <a href="#"
+                        class="block text-[#F9F9F7] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
+                        aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="text-[#F9F9F7] size-4 fill-[#F9F9F7] hover:fill-blue-700 transition"
+                            aria-hidden="true" viewBox="0 0 1226.37 1226.37">
+                            <path
+                                d="M727.348 519.284 1174.075 0h-105.86L680.322 450.887 370.513 0H13.185l468.492 681.821L13.185 1226.37h105.866l409.625-476.152 327.181 476.152h357.328L727.322 519.284zM582.35 687.828l-47.468-67.894-377.686-540.24H319.8l304.797 435.991 47.468 67.894 396.2 566.721H905.661L582.35 687.854z"
+                                data-original="#000000" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="flex py-2 px-4 md:px-8 bg-white border-b border-slate-300 min-h-[68px] relative z-20"
+            aria-label="Main navigation">
+            <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 w-full">
+                <a href="#"
+                    class="min-w-9 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+                    <img src="img/logo.png" alt="">
+                    <span class="bistro">Bistro Bliss</span>
+                </a>
+
+                <div id="collapseMenu" tabindex="-1"
+                    class="hidden lg:block max-lg:bg-white max-lg:border-l max-lg:border-slate-300 max-lg:w-1/2 max-lg:fixed max-lg:top-0 max-lg:right-0 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto max-sm:w-full z-50 outline-none">
+
+                    <div
+                        class="py-2 px-4 flex justify-between items-center border-b border-slate-300 sticky top-0 bg-white lg:hidden max-lg:min-h-[68px]">
+                        <a href="#"
+                            class="min-w-9 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+                            <img src="img/logo.png" alt="">
+                            <span class="bistromobile">Bistro Bliss</span>
+                        </a>
+                        <button type="button" aria-controls="collapseMenu" id="toggleClose"
+                            class="cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+                            <span class="sr-only">Close main menu</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-slate-900" aria-hidden="true"
+                                viewBox="0 0 329.269 329">
+                                <path
+                                    d="M194.8 164.77 323.013 36.555c8.343-8.34 8.343-21.825 0-30.164-8.34-8.34-21.825-8.34-30.164 0L164.633 134.605 36.422 6.391c-8.344-8.34-21.824-8.34-30.164 0-8.344 8.34-8.344 21.824 0 30.164l128.21 128.215L6.259 292.984c-8.344 8.34-8.344 21.825 0 30.164a21.27 21.27 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25l128.21-128.214 128.216 128.214a21.27 21.27 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25 8.343-8.34 8.343-21.824 0-30.164zm0 0"
+                                    data-original="#000000" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul class="nav flex flex-col gap-8 font-semibold text-sm text-slate-900 lg:flex-row max-lg:p-6">
+                        <li>
+                            <a href="#"
+                                class="border border-[#DBDFD0] rounded-3xl bg-[#DBDFD0] px-3 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">About</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Pages</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="#"
+                        class="p-2 text-sm rounded-2xl font-semibold cursor-pointer border-2 border-black hover:bg-[#DBDFD0] transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">Book
+                        A Table</a>
+
+                    <button type="button" aria-controls="collapseMenu" aria-expanded="false" aria-haspopup="true"
+                        id="toggleOpen"
+                        class="cursor-pointer lg:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="size-7 fill-slate-900" aria-hidden="true" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="hero">
+                <!-- max-w-[650px] mətnin yeməklərin arasına yığılmasını təmin edir -->
+                <div
+                    class="title flex flex-col items-center justify-center gap-6 py-16 px-4 md:py-28 mx-auto max-w-[650px]">
+                    <div class="taste flex flex-col items-center justify-center">
+                        <h2 class="best">Best food for your taste</h2>
+                        <span class="mt-4 text-[#2C2F24]">
+                            Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven.
+                        </span>
+                    </div>
+                    <div class="button flex flex-row items-center justify-center gap-3">
+                        <a href="" class="border-[#AD343E] py-2 px-4 bg-[#AD343E] text-white rounded-2xl">Book A
+                            Table</a>
+                        <a href="" class="border-2 rounded-2xl py-2 px-4">Explore Menu</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- px-4 və flex-wrap ilə mobil ekranda kartların alt-alta düşməsi təmin olunur -->
+            <div class="menu flex flex-col gap-10 mt-16 md:mt-30 px-4 mb-20">
+                <h2>Browse Our Menu</h2>
+                <div class="menuCards flex flex-wrap items-center justify-center gap-6">
+
+                    <div
+                        class="flex flex-col items-center justify-center gap-3 w-full sm:w-[280px] h-[290px] border-2 border-[#DBDFD0] rounded-xl p-4">
+                        <div class="w-12 h-12 rounded-full bg-[#DBDFD0] flex items-center justify-center">
+                            <img src="img/Group.png" class="w-[25px]" alt="">
+                        </div>
+                        <h4 class="font-semibold">Breakfast</h4>
+                        <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
+                        <span>Explore Menu</span>
+                    </div>
+
+                    <div
+                        class="flex flex-col items-center justify-center gap-3 w-full sm:w-[280px] h-[290px] border-2 border-[#DBDFD0] rounded-xl p-4">
+                        <div class="w-12 h-12 rounded-full bg-[#DBDFD0] flex items-center justify-center">
+                            <img src="img/Vector.png" class="w-[25px]" alt="">
+                        </div>
+                        <h4 class="font-semibold">Main</h4>
+                        <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
+                        <span>Explore Menu</span>
+                    </div>
+
+                    <div
+                        class="flex flex-col items-center justify-center gap-3 w-full sm:w-[280px] h-[290px] border-2 border-[#DBDFD0] rounded-xl p-4">
+                        <div class="w-12 h-12 rounded-full bg-[#DBDFD0] flex items-center justify-center">
+                            <img src="img/Vector (1).png" class="w-[25px]" alt="">
+                        </div>
+                        <h4 class="font-semibold">Drinks</h4>
+                        <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
+                        <span>Explore Menu</span>
+                    </div>
+
+                    <div
+                        class="flex flex-col items-center justify-center gap-3 w-full sm:w-[280px] h-[290px] border-2 border-[#DBDFD0] rounded-xl p-4">
+                        <div class="w-12 h-12 rounded-full bg-[#DBDFD0] flex items-center justify-center">
+                            <img src="img/Vector (2).png" class="w-[25px]" alt="">
+                        </div>
+                        <h4 class="font-semibold">Desserts</h4>
+                        <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
+                        <span>Explore Menu</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div
+                class="flex flex-col lg:flex-row xl:flex-row md:flex-row items-center justify-center gap-18 bg-[#F9F9F7] py-20 px-15 md:px-40 xl:px-40 lg:px-40">
+                <img src="img/s2.png" alt="">
+                <div class="healthy flex flex-col items-left justify-center gap-5">
+                    <h2>We provide healthy food for your family.</h2>
+                    <p>Our story began with a vision to create a unique dining experience that merges fine dining,
+                        exceptional service, and a vibrant ambiance. Rooted in city's rich culinary culture, we aim to
+                        honor our local roots while infusing a global palate.
+                    </p>
+                    <span>At place, we believe that dining is not just about food, but also about the overall
+                        experience.
+                        Our staff, renowned for their warmth and dedication, strives to make every visit an
+                        unforgettable event.</span>
+                    <span><a href="" class="border-2 rounded-2xl py-2 px-4">Explore Menu</a></span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="unique text-left px-20 py-20">
+                <h2 class="xl:ml-16 lg:ml-16 md:ml-16 w-[300px] md:w-[800px] lg:w-[800px] xl:w-[800px]">We also offer
+                    unique services for your events</h2>
+                <div class="services flex flex-wrap items-center justify-center mt-10 gap-10">
+                    <div class="servicesCard flex flex-col gap-3 w-[280px]">
+                        <img src="img/s3-1 (1).png" class="rounded-xl w-[280px] h-[290px]" alt="">
+                        <div class="flex flex-col item-left justify-center gap-3">
+                            <h4>Caterings</h4>
+                            <p>In the new era of technology we look in the future with certainty for life.</p>
+                        </div>
+                    </div>
+                    <div class="servicesCard flex flex-col gap-3 w-[280px]">
+                        <img src="img/s3-1 (4).png" class="rounded-xl w-[280px] h-[290px]" alt="">
+                        <div class="flex flex-col item-left justify-center gap-3">
+                            <h4>Caterings</h4>
+                            <p>In the new era of technology we look in the future with certainty for life.</p>
+                        </div>
+                    </div>
+                    <div class="servicesCard flex flex-col gap-3 w-[280px]">
+                        <img src="img/s3-1 (2).png" class="rounded-xl w-[280px] h-[290px]" alt="">
+                        <div class="flex flex-col item-left justify-center gap-3">
+                            <h4>Caterings</h4>
+                            <p>In the new era of technology we look in the future with certainty for life.</p>
+                        </div>
+                    </div>
+                    <div class="servicesCard flex flex-col gap-3 w-[280px]">
+                        <img src="img/s3-1 (3).png" class="rounded-xl w-[280px] h-[290px]" alt="">
+                        <div class="flex flex-col item-left justify-center gap-3">
+                            <h4>Caterings</h4>
+                            <p>In the new era of technology we look in the future with certainty for life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#F9F9F7]">
+            <div class="max-w-7xl mx-auto px-6 sm:px-10 py-16 lg:py-24 bg-[#F9F9F7]">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+                    <!-- Images -->
+                    <div class="grid grid-cols-3 gap-4 sm:gap-5">
+                        <!-- Big image (left, tall) -->
+                        <div class="col-span-2 row-span-2">
+                            <div
+                                class="w-full h-full min-h-[320px] sm:min-h-[420px] lg:min-h-[480px] rounded-2xl bg-gray-200 overflow-hidden">
+                                <!-- şəkil buraya -->
+                                <img src="img/s4 (1).png" alt="" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+
+                        <!-- Small image top -->
+                        <div class="col-span-1">
+                            <div
+                                class="w-full h-[150px] sm:h-[190px] lg:h-[220px] rounded-2xl bg-gray-200 overflow-hidden">
+                                <!-- şəkil buraya -->
+                                <img src="img/s4 (3).png" alt="" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+
+                        <!-- Small image bottom -->
+                        <div class="col-span-1">
+                            <div
+                                class="w-full h-[150px] sm:h-[190px] lg:h-[220px] rounded-2xl bg-gray-200 overflow-hidden">
+                                <!-- şəkil buraya -->
+                                <img src="img/s4 (2).png" alt="" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="max-w-lg">
+                        <h1
+                            class="font-display text-4xl sm:text-5xl lg:text-[3.25rem] leading-tight text-gray-900 mb-6">
+                            Fastest Food Delivery in City
+                        </h1>
+
+                        <p class="text-gray-500 text-base leading-relaxed mb-8">
+                            Our visual designer lets you quickly and of drag a down your way to customapps for both keep
+                            desktop.
+                        </p>
+
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-4">
+                                <span
+                                    class="flex items-center justify-center w-9 h-9 rounded-full bg-[#C0392B] text-white shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
+                                        <circle cx="12" cy="11" r="2.5" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="text-gray-800 font-medium">Delivery within 30 minutes</span>
+                            </li>
+
+                            <li class="flex items-center gap-4">
+                                <span
+                                    class="flex items-center justify-center w-9 h-9 rounded-full bg-[#C0392B] text-white shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </span>
+                                <span class="text-gray-800 font-medium">Best Offer &amp; Prices</span>
+                            </li>
+
+                            <li class="flex items-center gap-4">
+                                <span
+                                    class="flex items-center justify-center w-9 h-9 rounded-full bg-[#C0392B] text-white shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </span>
+                                <span class="text-gray-800 font-medium">Online Services Available</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div class="flex flex-col items-center justify-center gap-15 py-20 px-20">
+                <h2 class="main-title">What Our Customers Say</h2>
+                <div class="customers flex flex-wrap gap-8 items-center justify-center">
+                    <div class="customerCard w-full max-w-xs bg-[#F9F9F7] rounded-2xl p-6 shadow-sm">
+                        <h3 class="font-display text-xl text-[#AD343E] mb-4">
+                            “The best restaurant”
+                        </h3>
+                        <p class="text-sm text-gray-500 leading-relaxed mb-6">
+                            Last night, we dined at place and were simply blown away. From the moment we stepped in, we
+                            were enveloped in an inviting atmosphere and greeted with warm smiles.
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-full bg-gray-200 overflow-hidden shrink-0">
+                                <!-- şəkil buraya -->
+                                <img src="img/Ellipse 19.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">Sophire Robson</p>
+                                <p class="text-xs text-gray-400">Los Angeles, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customerCard w-full max-w-xs bg-[#F9F9F7] rounded-2xl p-6 shadow-sm">
+                        <h3 class="font-display text-xl text-[#AD343E] mb-4">
+                            “Simply delicious”
+                        </h3>
+                        <p class="text-sm text-gray-500 leading-relaxed mb-6">
+                            Place exceeded my expectations on all fronts. The ambiance was cozy and relaxed, making it a
+                            perfect venue for our anniversary dinner. Each dish was prepared and beautifully presented.
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-full bg-gray-200 overflow-hidden shrink-0">
+                                <!-- şəkil buraya -->
+                                <img src="img/Image.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">Matt Cannon</p>
+                                <p class="text-xs text-gray-400">San Diego, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customerCard w-full max-w-xs bg-[#F9F9F7] rounded-2xl p-6 shadow-sm">
+                        <h3 class="font-display text-xl text-[#AD343E] mb-4">
+                            “One of a kind restaurant”
+                        </h3>
+                        <p class="text-sm text-gray-500 leading-relaxed mb-6">
+                            The culinary experience at place is first to none. The atmosphere is vibrant, the food -
+                            nothing short of extraordinary. The food was the highlight of our evening. Highly
+                            recommended.
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-full bg-gray-200 overflow-hidden shrink-0">
+                                <!-- şəkil buraya -->
+                                <img src="img/Image (1).png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">Andy Smith</p>
+                                <p class="text-xs text-gray-400">San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="bg-[#F9F9F7]">
+            <div class="max-w-7xl mx-auto px-6 sm:px-10 py-16 lg:py-24 ">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 mb-10 lg:mb-14">
+                    <h2 class="font-display text-4xl sm:text-5xl text-gray-900">
+                        Our Blog &amp; Articles
+                    </h2>
+                    <a href="#"
+                        class="inline-flex items-center justify-center whitespace-nowrap self-start sm:self-auto px-7 py-3.5 rounded-full bg-[#C0392B] text-white font-medium text-sm hover:bg-[#a83226] transition-colors">
+                        Read All Articles
+                    </a>
+                </div>
+
+                <!-- Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                    <!-- Featured large card -->
+                    <article class="lg:col-span-1 bg-white rounded-2xl overflow-hidden flex flex-col">
+                        <div class="w-full h-64 sm:h-80 lg:h-full lg:min-h-[420px] bg-gray-200 overflow-hidden">
+                            <!-- şəkil buraya -->
+                            <img src="img/s5 (5).png" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs text-gray-400 font-medium">January 3, 2023</span>
+                            <h3 class="mt-3 text-lg font-semibold text-gray-900 leading-snug">
+                                The secret tips &amp; tricks to prepare a perfect burger &amp; pizza for our customers
+                            </h3>
+                            <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+                                Lorem ipsum dolor sit amet consectetur of a adipiscing elitilmim semper adipiscing massa
+                                gravida nisi cras enim quis nibholm varius amet gravida ut facilisis neque egestas.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Small cards grid -->
+                    <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                        <article class="bg-white rounded-2xl overflow-hidden">
+                            <div class="w-full h-48 sm:h-44 bg-gray-200 overflow-hidden">
+                                <!-- şəkil buraya -->
+                                <img src="img/s5 (4).png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <span class="text-xs text-gray-400 font-medium">January 3, 2023</span>
+                                <h3 class="mt-3 text-base font-semibold text-gray-900 leading-snug">
+                                    How to prepare the perfect french fries in an air fryer
+                                </h3>
+                            </div>
+                        </article>
+
+                        <article class="bg-white rounded-2xl overflow-hidden">
+                            <div class="w-full h-48 sm:h-44 bg-gray-200 overflow-hidden">
+                                <!-- şəkil buraya -->
+                                <img src="img/s5 (2).png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <span class="text-xs text-gray-400 font-medium">January 3, 2023</span>
+                                <h3 class="mt-3 text-base font-semibold text-gray-900 leading-snug">
+                                    How to prepare delicious chicken tenders
+                                </h3>
+                            </div>
+                        </article>
+
+                        <article class="bg-white rounded-2xl overflow-hidden">
+                            <div class="w-full h-48 sm:h-44 bg-gray-200 overflow-hidden">
+                                <!-- şəkil buraya -->
+                                <img src="img/s5 (1).png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <span class="text-xs text-gray-400 font-medium">January 3, 2023</span>
+                                <h3 class="mt-3 text-base font-semibold text-gray-900 leading-snug">
+                                    7 delicious cheesecake recipes you can prepare
+                                </h3>
+                            </div>
+                        </article>
+
+                        <article class="bg-white rounded-2xl overflow-hidden">
+                            <div class="w-full h-48 sm:h-44 bg-gray-200 overflow-hidden">
+                                <!-- şəkil buraya -->
+                                <img src="img/s5 (3).png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <span class="text-xs text-gray-400 font-medium">January 3, 2023</span>
+                                <h3 class="mt-3 text-base font-semibold text-gray-900 leading-snug">
+                                    5 great pizza restaurants you should visit this city
+                                </h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-[#474747]">
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 py-16 lg:py-20">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-2 mb-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 12a8 8 0 0016 0H4z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 12V4m0 0l-2 2m2-2l2 2" />
+                        </svg>
+                        <span class="font-display italic text-2xl text-white">Bistro Bliss</span>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-6 max-w-[240px]">
+                        In the new era of technology we look a in the future with certainty and pride to for our company
+                        and.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <a href="#"
+                            class="flex items-center justify-center w-8 h-8 rounded-full bg-[#C0392B] text-white hover:opacity-90 transition-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="flex items-center justify-center w-8 h-8 rounded-full bg-[#C0392B] text-white hover:opacity-90 transition-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="flex items-center justify-center w-8 h-8 rounded-full bg-[#C0392B] text-white hover:opacity-90 transition-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 5.838a4 4 0 100 8 4 4 0 000-8zm0 6.6a2.6 2.6 0 110-5.2 2.6 2.6 0 010 5.2zm5.2-6.8a1.2 1.2 0 100-2.4 1.2 1.2 0 000 2.4z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="flex items-center justify-center w-8 h-8 rounded-full bg-[#C0392B] text-white hover:opacity-90 transition-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.203 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .268.18.58.688.482A10.02 10.02 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pages -->
+                <div>
+                    <h4 class="text-white font-semibold text-sm mb-5">Pages</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Menu</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Delivery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Utility Pages -->
+                <div>
+                    <h4 class="text-white font-semibold text-sm mb-5">Utility Pages</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Start Here</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Styleguide</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Password Protected</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">404 Not Found</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Licenses</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Changelog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">View More</a></li>
+                    </ul>
+                </div>
+
+                <!-- Instagram -->
+                <div>
+                    <h4 class="text-white font-semibold text-sm mb-5">Follow Us On Instagram</h4>
+                    <div class="grid grid-cols-2 gap-3 max-w-[220px]">
+                        <div class="w-full aspect-square rounded-xl bg-gray-600 overflow-hidden">
+                            <!-- şəkil buraya -->
+                            <img src="img/Mask group.png" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-full aspect-square rounded-xl bg-gray-600 overflow-hidden">
+                            <!-- şəkil buraya -->
+                            <img src="img/Mask group (1).png" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-full aspect-square rounded-xl bg-gray-600 overflow-hidden">
+                            <!-- şəkil buraya -->
+                            <img src="img/Mask group (2).png" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-full aspect-square rounded-xl bg-gray-600 overflow-hidden">
+                            <!-- şəkil buraya -->
+                            <img src="img/Mask group (3).png" alt="" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Divider + Copyright -->
+            <div class="mt-14 lg:mt-16 pt-6 border-t border-white/10">
+                <p class="text-center text-xs text-gray-500">
+                    Copyright © 2023 Hashtag Developer. All Rights Reserved
+                </p>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

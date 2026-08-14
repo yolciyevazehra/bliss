@@ -1,0 +1,120 @@
+/* Hero section üçün fondakı şəklin mərkəzləşdirilməsi */
+.hero {
+    background-image: url("img/bg1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Şəkli ortalayır */
+}
+
+/* Əsas Başlıq */
+.best {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 42px;
+    /* Mobildə daha kiçik */
+    line-height: 1.1;
+    text-align: center;
+    color: #2C2F24;
+}
+
+.menu h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Planşet və Kompüter ekranları üçün böyük şrift ölçüləri (Desktop) */
+@media (min-width: 768px) {
+    .best {
+        font-size: 80px;
+        /* Ekran böyüdükcə böyüyür */
+    }
+
+    .menu h2 {
+        font-size: 55px;
+    }
+}
+
+/* Standart olaraq Mobil telefonlar üçün ölçülər */
+.healthy h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 32px;
+    /* Mobildə rahat oxunur */
+}
+
+.healthy p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.healthy span {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.unique {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+
+    /* Mobildə 32px, ekrana görə dinamik böyüyüb maksimum 55px olur */
+    font-size: clamp(32px, 5vw, 55px);
+
+    /* Nisbi line-height mətni hər ölçüdə mütənasib saxlayır (60.5 / 55 ≈ 1.1) */
+    line-height: 1.1;
+    letter-spacing: 0;
+}
+
+.servicesCard h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    font-size: clamp(20px, 2.5vw, 24px);
+    line-height: 1.25;
+}
+
+.servicesCard p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: clamp(15px, 1.5vw, 16px);
+    line-height: 1.5;
+}
+
+.font-display {
+    font-family: 'Playfair Display', serif;
+}
+
+.main-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0;
+  
+  /* Mobildə 32px, ekrana görə dinamik böyüyüb maksimum 55px olur */
+  font-size: clamp(32px, 5vw, 55px);
+  
+  /* Nisbi line-height (60.5px / 55px ≈ 1.1) */
+  line-height: 1.1;
+}
+
+/* Planşet və Kompüterlər üçün (ekran 768px-dən böyük olduqda) */
+@media (min-width: 768px) {
+    .healthy h2 {
+        font-size: 55px;
+        /* Sənin istədiyin əsl ölçü */
+    }
+
+    .healthy p {
+        font-size: 18px;
+    }
+
+    .healthy span {
+        font-size: 16px;
+    }
+}
