@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="../src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Menu</title>
+</head>
+
+<body>
+    <header>
+        <!-- topbar -->
+        <div class="px-4 py-2.5 bg-[#474747]">
+            <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+                <div class="text-slate-900 text-[13px] flex flex-wrap items-center gap-x-4 gap-y-1">
+                    <span class="text-[#F9F9F7]">
+                        <i class="fa-solid fa-phone text-[#F9F9F7]"></i>
+                        (414) 857 - 0107
+                    </span>
+                    <span class="text-[#F9F9F7]">
+                        <i class="fa-regular fa-envelope text-[#F9F9F7]"></i>
+                        yummy@bistrobliss
+                    </span>
+
+
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="#"
+                        class=" text-[#F9F9F7] block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
+                        aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="size-4 fill-[#F9F9F7] hover:fill-blue-700 transition" aria-hidden="true"
+                            viewBox="0 0 155.139 155.139">
+                            <path
+                                d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761z"
+                                data-original="#010002" />
+                        </svg>
+                    </a>
+
+                    <a href="#"
+                        class="block text-[#F9F9F7] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
+                        aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="size-4 fill-[#F9F9F7] hover:fill-blue-700 transition" aria-hidden="true"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0"
+                                data-original="#ffffff" />
+                        </svg>
+                    </a>
+
+                    <a href="#"
+                        class="block text-[#F9F9F7] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
+                        aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="text-[#F9F9F7] size-4 fill-[#F9F9F7] hover:fill-blue-700 transition"
+                            aria-hidden="true" viewBox="0 0 1226.37 1226.37">
+                            <path
+                                d="M727.348 519.284 1174.075 0h-105.86L680.322 450.887 370.513 0H13.185l468.492 681.821L13.185 1226.37h105.866l409.625-476.152 327.181 476.152h357.328L727.322 519.284zM582.35 687.828l-47.468-67.894-377.686-540.24H319.8l304.797 435.991 47.468 67.894 396.2 566.721H905.661L582.35 687.854z"
+                                data-original="#000000" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="flex py-2 px-4 md:px-8 bg-white border-b border-slate-300 min-h-[68px] relative z-20"
+            aria-label="Main navigation">
+            <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 w-full">
+                <a href="#"
+                    class="min-w-9 flex flex-row items-center justify-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+                    <img src="../img/logo.png" alt="">
+                    <span class="bistro">Bistro Bliss</span>
+                </a>
+
+                <div id="collapseMenu" tabindex="-1"
+                    class="hidden lg:block max-lg:bg-white max-lg:border-l max-lg:border-slate-300 max-lg:w-1/2 max-lg:fixed max-lg:top-0 max-lg:right-0 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto max-sm:w-full z-50 outline-none">
+
+                    <div
+                        class="py-2 px-4 flex justify-between items-center border-b border-slate-300 sticky top-0 bg-white lg:hidden max-lg:min-h-[68px]">
+                        <a href="#"
+                            class="min-w-9 flex flex-row items-center justify-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+                            <img src="img/logo.png" alt="">
+                            <span class="bistromobile">Bistro Bliss</span>
+                        </a>
+                        <button type="button" aria-controls="collapseMenu" id="toggleClose"
+                            class="cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+                            <span class="sr-only">Close main menu</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-slate-900" aria-hidden="true"
+                                viewBox="0 0 329.269 329">
+                                <path
+                                    d="M194.8 164.77 323.013 36.555c8.343-8.34 8.343-21.825 0-30.164-8.34-8.34-21.825-8.34-30.164 0L164.633 134.605 36.422 6.391c-8.344-8.34-21.824-8.34-30.164 0-8.344 8.34-8.344 21.824 0 30.164l128.21 128.215L6.259 292.984c-8.344 8.34-8.344 21.825 0 30.164a21.27 21.27 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25l128.21-128.214 128.216 128.214a21.27 21.27 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25 8.343-8.34 8.343-21.824 0-30.164zm0 0"
+                                    data-original="#000000" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul class="nav flex flex-col gap-8 font-semibold text-sm text-slate-900 lg:flex-row max-lg:p-6">
+                        <li>
+                            <a href="../index.htm"
+                                class="hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="About.htm"
+                                class="hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">About</a>
+                        </li>
+                        <li>
+                            <a href="Menu.htm"
+                                class="border border-[#DBDFD0] rounded-3xl bg-[#DBDFD0] px-3 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Menu</a>
+                        </li>
+                        <li class="relative group ">
+                            <a href="#"
+                                class="hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Pages</a>
+                            <div
+                                class="absolute left-0 top-full hidden w-48 rounded-lg bg-white p-2 shadow-lg border border-gray-100 group-hover:block z-50">
+                                <a href="Pages.htm"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 rounded-md transition-colors">
+                                    Book
+                                </a>
+                                <a href="Blog.htm"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 rounded-md transition-colors">
+                                    Blog
+                                </a>
+                                <a href="BlogDetails.htm"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 rounded-md transition-colors">
+                                    Blog Details
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="Contact.htm"
+                                class="hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="#"
+                        class="p-2 text-sm rounded-2xl font-semibold cursor-pointer border-2 border-black hover:bg-[#DBDFD0] transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">Book
+                        A Table</a>
+
+                    <button type="button" aria-controls="collapseMenu" aria-expanded="false" aria-haspopup="true"
+                        id="toggleOpen"
+                        class="cursor-pointer lg:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="size-7 fill-slate-900" aria-hidden="true" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="flex flex-col items-center justify-center gap-8 mx-auto py-10">
+                <div class="ourmenu text-center">
+                    <h2 class="text-[#2C2F24]">Our Menu</h2>
+                    <p class="mt-5 text-[#495460]">We consider all the drivers of change gives you the components you
+                        need to change to create a
+                        truly
+                        happens.</p>
+                </div>
+                <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row items-center justify-center gap-5">
+                    <span><a href=""
+                            class="border-[#AD343E] bg-[#AD343E] text-white rounded-2xl py-2 px-4">All</a></span>
+                    <span><a href=""
+                            class="border rounded-2xl py-2 px-4 hover:border-[#AD343E] hover:bg-[#AD343E] hover:text-white">Breakfast</a></span>
+                    <span><a href=""
+                            class="border rounded-2xl py-2 px-4 hover:border-[#AD343E] hover:bg-[#AD343E] hover:text-white">Main
+                            Dishes</a></span>
+                    <span><a href=""
+                            class="border rounded-2xl py-2 px-4 hover:border-[#AD343E] hover:bg-[#AD343E] hover:text-white">Drinks</a></span>
+                    <span><a href=""
+                            class="border rounded-2xl py-2 px-4 hover:border-[#AD343E] hover:bg-[#AD343E] hover:text-white">Deserst</a></span>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div id="menus" class="my-10 mx-auto flex flex-wrap items-center justify-center gap-5">
+
+            </div>
+        </section>
+        <section>
+            <div class="max-w-7xl mx-auto px-6 sm:px-10 py-16 lg:py-24">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <div class="max-w-md">
+                        <h2 class="font-display text-4xl sm:text-5xl leading-tight text-gray-900 mb-6">
+                            You can order through apps
+                        </h2>
+                        <p class="text-gray-500 text-base leading-relaxed">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit enim bibendum sed et aliquet aliquet
+                            risus tempor semper.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
+
+                        <div class="h-24 rounded-xl bg-white shadow-sm flex items-center justify-center p-4">
+                            <img src="../img/app1.png" alt="Uber Eats" class="max-h-8 max-w-full object-contain">
+                        </div>
+
+                        <div class="h-24 rounded-xl bg-white shadow-sm flex items-center justify-center p-4">
+                            <img src="../img/app2.png" alt="Grubhub" class="max-h-8 max-w-full object-contain">
+                        </div>
+
+                        <div class="h-24 rounded-xl bg-white shadow-sm flex items-center justify-center p-4">
+                            <img src="../img/app3.png" alt="Postmates" class="max-h-8 max-w-full object-contain">
+                        </div>
+
+                        <div class="h-24 rounded-xl bg-white shadow-sm flex items-center justify-center p-4">
+                            <img src="../img/app4.png" alt="DoorDash" class="max-h-8 max-w-full object-contain">
+                        </div>
+
+                        <div class="h-24 rounded-xl bg-white shadow-sm flex items-center justify-center p-4">
+                            <img src="../img/app5.png" alt="Foodpanda" class="max-h-8 max-w-full object-contain">
+                        </div>
+
+                        <div class="h-24 rounded-xl bg-white shadow-sm flex items-center justify-center p-4">
+                            <img src="../img/app6.png" alt="Deliveroo" class="max-h-8 max-w-full object-contain">
+                        </div>
+
+                        <div class="h-24 rounded-xl bg-white shadow-sm flex items-center justify-center p-4">
+                            <img src="../img/app7.png" alt="Instacart" class="max-h-8 max-w-full object-contain">
+                        </div>
+
+                        <div class="h-24 rounded-xl bg-white shadow-sm flex items-center justify-center p-4">
+                            <img src="../img/app8.png" alt="Just Eat" class="max-h-8 max-w-full object-contain">
+                        </div>
+
+                        <div class="h-24 rounded-xl bg-white shadow-sm flex items-center justify-center p-4">
+                            <img src="../img/app9.png" alt="DiDi Food" class="max-h-8 max-w-full object-contain">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-[#474747]">
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 py-16 lg:py-20">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+
+
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-2 mb-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 12a8 8 0 0016 0H4z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 12V4m0 0l-2 2m2-2l2 2" />
+                        </svg>
+                        <span class="font-display italic text-2xl text-white">Bistro Bliss</span>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-6 max-w-[240px]">
+                        In the new era of technology we look a in the future with certainty and pride to for our company
+                        and.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <a href="#"
+                            class="flex items-center justify-center w-8 h-8 rounded-full bg-[#C0392B] text-white hover:opacity-90 transition-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="flex items-center justify-center w-8 h-8 rounded-full bg-[#C0392B] text-white hover:opacity-90 transition-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="flex items-center justify-center w-8 h-8 rounded-full bg-[#C0392B] text-white hover:opacity-90 transition-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 5.838a4 4 0 100 8 4 4 0 000-8zm0 6.6a2.6 2.6 0 110-5.2 2.6 2.6 0 010 5.2zm5.2-6.8a1.2 1.2 0 100-2.4 1.2 1.2 0 000 2.4z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="flex items-center justify-center w-8 h-8 rounded-full bg-[#C0392B] text-white hover:opacity-90 transition-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.203 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .268.18.58.688.482A10.02 10.02 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold text-sm mb-5">Pages</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Menu</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Delivery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold text-sm mb-5">Utility Pages</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Start Here</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Styleguide</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Password Protected</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">404 Not Found</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Licenses</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Changelog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">View More</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold text-sm mb-5">Follow Us On Instagram</h4>
+                    <div class="grid grid-cols-2 gap-3 max-w-[220px]">
+                        <div class="w-full aspect-square rounded-xl bg-gray-600 overflow-hidden">
+                            <img src="../img/Mask group.png" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-full aspect-square rounded-xl bg-gray-600 overflow-hidden">
+                            <img src="../img/Mask group (1).png" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-full aspect-square rounded-xl bg-gray-600 overflow-hidden">
+                            <img src="../img/Mask group (2).png" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-full aspect-square rounded-xl bg-gray-600 overflow-hidden">
+                            <img src="../img/Mask group (3).png" alt="" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-14 lg:mt-16 pt-6 border-t border-white/10">
+                <p class="text-center text-xs text-gray-500">
+                    Copyright © 2023 Hashtag Developer. All Rights Reserved
+                </p>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

@@ -7,6 +7,24 @@
     /* Şəkli ortalayır */
 }
 
+.bistromobile {
+    font-style: italic;
+    font-weight: bold;
+    /* position və margin-ləri sıfırlayın */
+    margin: 0;
+}
+
+.bistro {
+    font-style: italic;
+    font-weight: bold;
+    /* position və margin-ləri sıfırlayın */
+    margin: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
 /* Əsas Başlıq */
 .best {
     font-family: 'Playfair Display', serif;
@@ -52,6 +70,42 @@
     font-size: 16px;
 }
 
+.guest h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.ourmenu h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.ourmenu p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.guest p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.guestCards h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.guestCards span {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
 .healthy span {
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
@@ -91,16 +145,16 @@
 }
 
 .main-title {
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  text-align: center;
-  letter-spacing: 0;
-  
-  /* Mobildə 32px, ekrana görə dinamik böyüyüb maksimum 55px olur */
-  font-size: clamp(32px, 5vw, 55px);
-  
-  /* Nisbi line-height (60.5px / 55px ≈ 1.1) */
-  line-height: 1.1;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0;
+
+    /* Mobildə 32px, ekrana görə dinamik böyüyüb maksimum 55px olur */
+    font-size: clamp(32px, 5vw, 55px);
+
+    /* Nisbi line-height (60.5px / 55px ≈ 1.1) */
+    line-height: 1.1;
 }
 
 /* Planşet və Kompüterlər üçün (ekran 768px-dən böyük olduqda) */
