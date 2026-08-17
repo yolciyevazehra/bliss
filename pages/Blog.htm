@@ -125,21 +125,29 @@
                             <a href="Menu.htm"
                                 class="hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Menu</a>
                         </li>
-                        <li class="relative group ">
-                            <a href="#"
-                                class="border border-[#DBDFD0] rounded-3xl bg-[#DBDFD0] px-3 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ">Pages</a>
-                            <div
-                                class="absolute left-0 top-full hidden w-48 rounded-lg bg-white p-2 shadow-lg border border-gray-100 group-hover:block z-50">
+                        <li class="relative group">
+                            <button type="button" id="pagesBtn"
+                                class="flex items-center justify-between w-full hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+                                Pages
+                                <svg class="w-4 h-4 ml-1 lg:inline" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+
+                            <div id="pagesDropdown"
+                                class="hidden absolute left-0 top-full lg:group-hover:block w-48 rounded-lg bg-white p-2 shadow-lg border border-gray-100 z-50 max-lg:static max-lg:w-full max-lg:shadow-none max-lg:border-none">
                                 <a href="Pages.htm"
-                                    class="block px-4 py-2 text-sm text-gray-700 hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 rounded-md transition-colors">
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] rounded-md transition-colors">
                                     Book
                                 </a>
                                 <a href="Blog.htm"
-                                    class="block px-4 py-2 text-sm text-gray-700 hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 rounded-md transition-colors">
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] rounded-md transition-colors">
                                     Blog
                                 </a>
                                 <a href="BlogDetails.htm"
-                                    class="block px-4 py-2 text-sm text-gray-700 hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] hover:px-3 hover:py-2 rounded-md transition-colors">
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:border hover:border-[#DBDFD0] hover:rounded-3xl hover:bg-[#DBDFD0] rounded-md transition-colors">
                                     Blog Details
                                 </a>
                             </div>

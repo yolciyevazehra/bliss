@@ -89,3 +89,14 @@ if (ourBlog) {
         </div>
     `).join('');
 }
+
+
+const pagesBtn = document.getElementById('pagesBtn');
+const pagesDropdown = document.getElementById('pagesDropdown');
+
+if (pagesBtn && pagesDropdown) {
+    pagesBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        pagesDropdown.classList.toggle('hidden');
+    });
+}
